@@ -1,0 +1,23 @@
+{
+  "name": "innovationprojectbackend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Teemu Rekola",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^3.10.3",
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "esm": "^3.2.25",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.6.5",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0"
+  }
+}

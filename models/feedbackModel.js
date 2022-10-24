@@ -1,0 +1,9 @@
+import mongoose from 'mongoose';
+
+const Schema = mongoose.Schema;
+
+const feedbackSchema = new Schema({
+  feedback: {type: String, required: true},
+});
+
+export default mongoose.model('Feedback', feedbackSchema);
