@@ -7,14 +7,14 @@ export default gql`
   }
 
   extend type Mutation {
-    addFeedback(feedback: String!, subject: String!, email: String): Feedback
-    modifyFeedback(id: ID!, feedback: String, subject: String!, email: String): Feedback
+    addFeedback(subject: String!, feedback: String!, email: String): Feedback
+    modifyFeedback(id: ID!, subject: String!, feedback: String, email: String): Feedback
   }
 
   type Feedback {
     id: ID
-    feedback: String
     subject: String
+    feedback: String
     email: String
   }
 `;
