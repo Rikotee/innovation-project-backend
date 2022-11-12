@@ -5,6 +5,7 @@ export default gql`
     users: [User]
     user(id: ID!): User
     login(username: String!, password: String!): User
+    admins(start: Int, limit: Int): [User]
   }
 
   extend type Mutation {

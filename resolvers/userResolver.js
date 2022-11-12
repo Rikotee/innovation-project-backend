@@ -16,6 +16,20 @@ export default {
       req.body = args;
       return await login(req);
     },
+    admins: async (parent, args, context) => {
+      if (!context.user) {
+        throw new AuthenticationError('Not authorised');
+      }
+      const start = args.start || 0;
+      const admins = (await User
+        .find()
+        .skip(start))
+        .filter((a) => a.admin == true)
+        .slice(0, 10);
+
+      return args.bounds
+        ? admins.find(): admins;
+    },
   },
   Mutation: {
     registerUser: async (parent, args) => {

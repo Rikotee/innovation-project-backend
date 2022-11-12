@@ -16,7 +16,7 @@ export default {
         throw new AuthenticationError('Not authorised');
       }
       const start = args.start || 0;
-      const limit = args.limit || 10;
+      const limit = args.limit || 100;
       const feedbacks = Feedback.find().skip(start).limit(limit);
 
       return args.bounds
