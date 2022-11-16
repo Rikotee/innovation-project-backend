@@ -46,5 +46,11 @@ export default {
       }
       return await Feedback.findByIdAndUpdate(args.id, args, { new: true });
     },
+    deleteFeedback: async (parent, args, context) => {
+      if (!context.user) {
+        throw new AuthenticationError('Not authorised');
+      }
+      return await Feedback.findByIdAndDelete(args.id, args);
+    },
   },
 };
