@@ -7,14 +7,15 @@ export default gql`
   }
 
   extend type Mutation {
-    addEvent(subject: String!, event: String!): Event
-    modifyEvent(id: ID!, subject: String!, event: String): Event
-    deleteEvent(id: ID!, subject: String, event: String): Event
+    addEvent(subject: String!, event: String!, date: String!): Event
+    modifyEvent(id: ID!, subject: String!, event: String, date: String): Event
+    deleteEvent(id: ID!, subject: String, event: String, date: String): Event
   }
 
   type Event {
     id: ID
     subject: String
     event: String
+    date: String
   }
 `;

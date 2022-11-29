@@ -7,9 +7,9 @@ export default gql`
   }
 
   extend type Mutation {
-    addFeedback(subject: String!, feedback: String!, email: String): Feedback
-    modifyFeedback(id: ID!, subject: String!, feedback: String, email: String): Feedback
-    deleteFeedback(id: ID!, subject: String, feedback: String, email: String): Feedback
+    addFeedback(subject: String!, feedback: String!, email: String, date: String!): Feedback
+    modifyFeedback(id: ID!, subject: String!, feedback: String, email: String, date: String): Feedback
+    deleteFeedback(id: ID!, subject: String, feedback: String, email: String, date: String): Feedback
   }
 
   type Feedback {
@@ -17,5 +17,6 @@ export default gql`
     subject: String
     feedback: String
     email: String
+    date: String
   }
 `;
