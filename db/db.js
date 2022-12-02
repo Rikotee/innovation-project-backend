@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 const connectMongo = async () => {
   try {
-    const connection = await mongoose.connect(INNO_URL, {
+    const connection = await mongoose.connect(DB_URL, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
