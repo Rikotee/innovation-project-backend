@@ -38,7 +38,7 @@ export default {
           throw new Error(err);
         }
       },
-    // for editing newss
+    // for editing news
     modifyNews: async (parent, args, context) => {
       if (!context.user) {
         throw new AuthenticationError('Not authorised');
