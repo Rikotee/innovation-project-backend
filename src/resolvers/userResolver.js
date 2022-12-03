@@ -1,6 +1,6 @@
 import bcrypt from 'bcrypt';
 import User from '../models/userModel';
-import { login } from '../utils/auth';
+import { login } from '../../utils/auth';
 import { AuthenticationError } from 'apollo-server-express';
 
 export default {

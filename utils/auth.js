@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken';
-import passport from '../utils/pass';
+import passport from './pass';
 
 const login = (req) => {
   console.log(req.body);

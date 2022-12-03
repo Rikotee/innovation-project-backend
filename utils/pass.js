@@ -2,7 +2,7 @@
 import passport from 'passport';
 import Strategy from 'passport-local';
 import { Strategy as JWTStrategy, ExtractJwt } from 'passport-jwt';
-import User from '../models/userModel';
+import User from '../src/models/userModel';
 import bcrypt from 'bcrypt';
 
 passport.use(
