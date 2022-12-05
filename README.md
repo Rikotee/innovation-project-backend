@@ -54,7 +54,7 @@ query Query($username: String!, $password: String!) {
 }
 
 ### Example register query
-![This is an register query image](https://users.metropolia.fi/~teemutr/queryimg/register.png)
+![This is an register query image](https://users.metropolia.fi/~teemutr/queryimg/regq.png)
 
 mutation Mutation($username: String!, $password: String!) {
   registerUser(username: $username, password: $password) {
