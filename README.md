@@ -69,7 +69,7 @@ mutation Mutation($username: String!, $password: String!) {
 
 
 ### Example feedback query
-![This is an user query image](https://users.metropolia.fi/~teemutr/queryimg/user.png)
+![This is an user query image](https://users.metropolia.fi/~teemutr/queryimg/feedbackq.png)
 
 query Query {
   feedbacks {
