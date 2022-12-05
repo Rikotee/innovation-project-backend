@@ -43,7 +43,7 @@ nodemon
 ## Query
 
 ### Example login query
-![This is an login query image](https://users.metropolia.fi/~teemutr/queryimg/login.png)
+![This is an login query image](https://users.metropolia.fi/~teemutr/queryimg/loginq.png)
 
 query Query($username: String!, $password: String!) {
   login(username: $username, password: $password) {
