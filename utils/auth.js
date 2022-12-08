@@ -20,7 +20,6 @@ const login = (req) => {
   });
 };
 
-// dummy function to check authentication (irl: e.g. passport-jwt)
 const checkAuth = (req) => {
   return new Promise((resolve) => {
     passport.authenticate('jwt', (err, user) => {

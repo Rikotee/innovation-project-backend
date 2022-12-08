@@ -33,7 +33,6 @@ passport.use(
       secretOrKey: 'olujugb',
     },
     (payload, done) => {
-      // console.log('jwt payload', payload);
       done(null, payload);
     }
   )
