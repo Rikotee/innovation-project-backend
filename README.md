@@ -37,7 +37,7 @@ DB_URL=mongodb://your-username:your-password@server-address/inno
 start server
 
 ```
-nodemon
+node start
 ```
 
 ## Query
